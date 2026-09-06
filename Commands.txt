@@ -1,0 +1,17 @@
+cmd in windows file explorer path of folder (basically click on the name of the folder when inside it)
+
+pip install -r Requirements.txt
+
+
+
+
+(only if needed, read which packages have error)
+
+pip install --upgrade pandas numpy matplotlib seaborn scikit-learn
+
+pip install --upgrade -r Requirements.txt
+
+
+(To run in cmd)
+python Main.py 
+streamlit run Main.py
