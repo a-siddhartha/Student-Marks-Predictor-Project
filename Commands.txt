@@ -14,3 +14,5 @@ pip install --upgrade -r requirements.txt
 
 (To run in cmd)
 streamlit run Main.py
+
+copy link from cmd and paste in browser
