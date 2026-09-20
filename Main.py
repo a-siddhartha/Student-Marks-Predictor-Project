@@ -78,7 +78,7 @@ t1 = st.number_input(
 )
 
 m1 = model.predict(np.array([[t1]]))
-m1 = min(m1,100)
+m1 = np.clip(m1, 0, 100)
 st.write(f"Predicted marks for {t1} hours of study: {m1[0][0]:.2f}")
 
 rm1 = st.number_input(
