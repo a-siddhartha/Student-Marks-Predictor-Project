@@ -100,6 +100,11 @@ if 0 <= t1 < 6.33:
 		st.write(
 			"Low hours, High marks: Exceptional efficiency! Ensure you aren't skipping deep details that might appear in harder exams."
 		)
+	else:
+		st.write(
+			"Input values are outside the specified range for analysis."
+		)
+	
 elif 6.33 <= t1 < 7.67:
 	if 0 <= rm1 < 76:
 		st.write(
@@ -113,6 +118,10 @@ elif 6.33 <= t1 < 7.67:
 		st.write(
 			"Mid hours, High marks: Great balance. Keep maintaining this pace to stay in the top percentile."
 		)
+	else:
+		st.write(
+			"Input values are outside the specified range for analysis."
+		)
 elif 7.67 <= t1:
 	if 0 <= rm1 < 76:
 		st.write(
@@ -125,6 +134,10 @@ elif 7.67 <= t1:
 	elif 84 <= rm1 <= 100:
 		st.write(
 			"High hours, High marks: Master level. Your dedication is paying off. Help others to further solidify your knowledge."
+		)
+	else:
+		st.write(
+			"Input values are outside the specified range for analysis."
 		)
 else:
 	st.write("Input values are outside the specified range for analysis.")
