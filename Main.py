@@ -88,7 +88,7 @@ rm1 = st.number_input(
 )
 
 if 0 <= t1 < 6.33:
-	if rm1 < 76:
+	if 0 <= rm1 < 76:
 		st.write(
 			"Low hours, Low marks: Try to increase your study consistency and seek help with core concepts."
 		)
