@@ -79,7 +79,10 @@ t1 = st.number_input(
 
 m1 = model.predict(np.array([[t1]]))
 m1 = np.clip(m1, 0, 100)
-st.write(f"Predicted marks for {t1} hours of study: {m1[0][0]:.2f}")
+if 0 <= t1:
+	st.write(f"Predicted marks for {t1} hours of study: {m1[0][0]:.2f}")
+else:
+	st.write("Input values are outside the specified range for analysis.")
 
 rm1 = st.number_input(
 	"To suggest tips on methods of study improvement, please provide most recent mark:",
