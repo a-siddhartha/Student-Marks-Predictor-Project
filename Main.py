@@ -58,12 +58,14 @@ X_train, x_test, Y_train, y_test = train_test_split(
 model = LinearRegression()
 model.fit(X_train, Y_train)
 
-st.write("RMSE:", model.score(X_train, Y_train))
-st.write("RMSE:", model.score(x_test, y_test))
+st.write("Training R² score:", model.score(X_train, Y_train))
+st.write("Testing R² score:", model.score(x_test, y_test))
 
 y_pred = model.predict(x_test)
-st.write("mean squared error", mean_squared_error(y_test, y_pred))
-st.write("r2_score", r2_score(y_test, y_pred))
+mse = mean_squared_error(y_test, y_pred)
+st.write("Mean squared error:", mse)
+st.write("Root mean squared error (RMSE):", np.sqrt(mse))
+st.write("R² score:", r2_score(y_test, y_pred))
 
 figure, axes = plt.subplots()
 axes.scatter(df["Std_StudyHours"], Y, color="red")
